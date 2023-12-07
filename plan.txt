@@ -10,7 +10,7 @@ python shutils
 python3.6\pythonw.exe code\python\lawn-mower\main.py
 
 # schedule task
-python sched
+python sched - schedule is simpler with all the necessary func
 python time
 
 # to stop process
@@ -18,5 +18,5 @@ taskkill /pid <processId> /f
 
 
 I need to generalize the loading process,
-handle errors and overwriting,
-schedule delays.
+handle errors and overwriting, *
+schedule delays. *
