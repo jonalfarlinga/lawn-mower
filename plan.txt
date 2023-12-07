@@ -15,3 +15,8 @@ python time
 
 # to stop process
 taskkill /pid <processId> /f
+
+
+I need to generalize the loading process,
+handle errors and overwriting,
+schedule delays.
