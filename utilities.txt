@@ -1,0 +1,17 @@
+I'm going to grab all of the files on my desktop and move them into a folder
+in my Documents.
+
+Some files are in C:\\Users\denni\Desktop, some are in C:\\Users\Public\Desktop
+
+python os
+python shutils
+
+# run in background:
+python3.6\pythonw.exe code\python\lawn-mower\main.py
+
+# schedule task
+python sched
+python time
+
+# to stop process
+taskkill /pid <processId> /f
