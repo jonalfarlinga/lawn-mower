@@ -1,1 +1,1 @@
-.\.venv\Scripts\activate.bat & mower.exe main.py & cmd /k
+.\.venv\Scripts\activate.bat & pythonw main.py & exit
