@@ -20,3 +20,6 @@ taskkill /pid <processId> /f
 I need to generalize the loading process, *
 handle errors and overwriting, *
 schedule delays. *
+
+figure out py2exe and
+background running

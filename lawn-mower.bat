@@ -1,1 +1,1 @@
-.\.venv\Scripts\activate.bat & lawn-mower.exe main.py & cmd /k
+.\.venv\Scripts\activate.bat & mower.exe main.py & cmd /k

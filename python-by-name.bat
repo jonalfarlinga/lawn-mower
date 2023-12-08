@@ -57,9 +57,9 @@
  ::::::::::::::::::::::::::::
  ::START
  ::::::::::::::::::::::::::::
- set PYTHON_HOME=%~dp0
- set PYTHON_NAME=lawnmower.exe
- copy "%PYTHON_HOME%python.exe" "%PYTHON_HOME%%PYTHON_NAME%"
+ set PYTHON_HOME=C:\Python312\
+ set PYTHON_NAME=mower.exe
+ copy "%PYTHON_HOME%pythonw.exe" "%PYTHON_HOME%%PYTHON_NAME%"
  set args=%*
  set args=%args:* =%
  "%PYTHON_HOME%%PYTHON_NAME%" %args%
