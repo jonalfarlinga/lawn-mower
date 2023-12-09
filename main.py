@@ -18,14 +18,19 @@ import schedule
 from time import sleep
 from datetime import datetime
 from json import load
+from sys import exit
 
-file = open('config.json', 'r')
-config = load(file)
-file.close()
-SWEEPS = config["SWEEPS"]
-DUSTBIN = config["DUSTBIN"]
-IGNORES = config["IGNORES"]
-BIN_CONTENTS = []
+try:
+    file = open('config.json', 'r')
+    config = load(file)
+    file.close()
+    SWEEPS = config["SWEEPS"]
+    DUSTBIN = config["DUSTBIN"]
+    IGNORES = config["IGNORES"]
+    BIN_CONTENTS = []
+except FileNotFoundError:
+    print("config.json not found. Quitting...")
+    exit()
 
 
 def clean_up():
@@ -65,7 +70,7 @@ def clean_up():
                 print("......... ignored")
         if not contents:
             print("...... No items to move. Moving on...")
-        print("Cleaning complete. Rescheduling...")
+    print("Cleaning complete. Rescheduling...")
 
 
 #   schedule delay(10min)
