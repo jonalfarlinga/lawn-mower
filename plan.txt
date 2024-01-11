@@ -22,4 +22,5 @@ handle errors and overwriting, *
 schedule delays. *
 
 figure out py2exe and
-background running
+background running *
+ I ended up making it run in background using pythonw and batch files.
