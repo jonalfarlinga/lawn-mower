@@ -77,7 +77,7 @@ def clean_up():
 if __name__ == "__main__":
     print('Pulling rip cord...')
 
-    '''Try to create DUSTBIN directory, move on if it exists'''
+    # Try to create DUSTBIN directory, move on if it exists
     try:
         BIN_CONTENTS = listdir(DUSTBIN)
     except FileNotFoundError:
@@ -85,11 +85,10 @@ if __name__ == "__main__":
         print(">>created", DUSTBIN)
         BIN_CONTENTS = listdir(DUSTBIN)
 
-    '''schedule program to run every 2 minutes'''
+    # schedule program to run every 2 minutes
     schedule.every(2).minutes.do(clean_up)
 
-    ''' main loop '''
-    # while true
+    # main loop
     while True:
         schedule.run_pending()
         sleep(30)

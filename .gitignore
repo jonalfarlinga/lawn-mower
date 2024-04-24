@@ -1,6 +1,7 @@
 # project ignores
 config.py
 config.json
+.deprecated
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
